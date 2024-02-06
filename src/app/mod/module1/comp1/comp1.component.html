@@ -1,0 +1,35 @@
+<!-- Labels for each type of binding -->
+<p>WELCOME DATA BINDING</p>
+
+<p>comp1 works!</p>
+
+<!-- String BINDING -->
+<p>String Binding:</p>
+{{ name }}<br>
+Addition = {{ x + y }}<br>
+Subtraction = {{ x - y }}
+<br>
+
+<!-- Property BINDING -->
+<p>Property Binding:</p>
+<input type="text" [value]="name"><br>
+
+<!-- EVENT BINDING -->
+<p>Event Binding:</p>
+<button (click)="print()">Print</button>
+<p>{{ p }}</p>
+<button (click)="insertData()">Insert</button>
+<button (click)="show()">Alert</button>
+<br>
+
+<!-- TWO WAY DATA BINDING -->
+<p>Two Way Data Binding:</p>
+<input type="text" [(ngModel)]="name"><br>
+{{ name }}
+
+<p (mouseover)="j()" (mouseout)="k()">{{ r }}</p>
+
+<!-- Label for insertion -->
+<p>Insert num First</p>
+<input type="number" [(ngModel)]="n1"><br>
+{{ n1 }}
